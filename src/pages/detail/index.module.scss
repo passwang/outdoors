@@ -1,0 +1,64 @@
+.detail {
+  background: #F7F7F7;
+  color: #333;
+}
+
+.header {
+background: #fff;
+padding: 40rpx;
+.title {
+font-size: 36rpx;
+font-weight: bold;
+}
+}
+.price {
+  font-size: 40rpx;
+  color: red;
+  margin: 30rpx 0;
+}
+.end {
+  font-size: 30rpx;
+  padding: 10rpx;
+  color: red;
+  background: red;
+  margin-right: 40rpx;
+}
+.time {
+  font-size: 28rpx;
+  color: #999999;
+  margin: 30rpx 0;
+}
+.icon {
+    margin-right: 20rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+}
+.people {
+  font-size: 28rpx;
+  color: #999999;
+}
+.notice {
+    background: #fff;
+    margin-top: 20rpx;
+    overflow: hidden;
+    padding:  40rpx 20rpx;
+    .block {
+      margin-bottom: 80rpx;
+    }
+    .title {
+        margin-bottom: 20rpx;
+    }
+    .text {
+       margin-bottom: 20rpx;
+       text-indent: 10rpx;
+    }
+    .notoicText {
+      margin-bottom: 10rpx;
+      text-indent: 10rpx;
+    }
+    .wx {
+        background: url(../../static/wx.jpg) 50% 50% no-repeat;
+        background-size: contain;
+        height: 800rpx;
+    }
+}
