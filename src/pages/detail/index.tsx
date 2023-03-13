@@ -1,6 +1,8 @@
 import { Component, PropsWithChildren } from 'react'
-import { View, Text, Image } from '@tarojs/components'
+import { View, Text, Button } from '@tarojs/components';
+
 import "taro-ui/dist/style/components/icon.scss";
+import "taro-ui/dist/style/components/button.scss";
 import styles from './index.module.scss';
 
 
@@ -102,6 +104,10 @@ export default class Detail extends Component<PropsWithChildren> {
             </View>
             <View className={styles.wx}></View>
           </View>
+        </View>
+        <View className={styles.tabBar}>
+          <Button className={`${styles.btn}`} openType='share'>分享</Button>
+          <Button className={`${styles.btn}`}>报名</Button>
         </View>
       </View>
     )
