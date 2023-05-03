@@ -1,15 +1,15 @@
 .detail {
-  background: #F7F7F7;
+  background: #f7f7f7;
   color: #333;
 }
 
 .header {
-background: #fff;
-padding: 40rpx;
-.title {
-font-size: 36rpx;
-font-weight: bold;
-}
+  background: #fff;
+  padding: 40rpx;
+  .title {
+    font-size: 36rpx;
+    font-weight: bold;
+  }
 }
 .price {
   font-size: 40rpx;
@@ -19,8 +19,8 @@ font-weight: bold;
 .end {
   font-size: 26rpx;
   padding: 6rpx;
-  color: #FF6769;
-  background: #FFF2F0;
+  color: #ff6769;
+  background: #fff2f0;
   margin-left: 20rpx;
 }
 .time {
@@ -29,63 +29,69 @@ font-weight: bold;
   margin: 30rpx 0;
 }
 .icon {
-    margin-right: 20rpx;
-    font-size: 28rpx;
-    font-weight: bold;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
 }
 .people {
   font-size: 28rpx;
   color: #999999;
 }
 .notice {
-    background: #fff;
-    margin-top: 20rpx;
-    overflow: hidden;
-    padding:  40rpx 20rpx;
-    .block {
-      margin-bottom: 80rpx;
-    }
-    .title {
-        margin-bottom: 20rpx;
-    }
-    .text {
-       margin-bottom: 20rpx;
-       text-indent: 10rpx;
-    }
-    .notoicText {
-      margin-bottom: 10rpx;
-      text-indent: 10rpx;
-    }
-    .wx {
-        background: url(../../static/wx.jpg) 50% 50% no-repeat;
-        background-size: contain;
-        height: 800rpx;
-    }
+  background: #fff;
+  margin-top: 20rpx;
+  overflow: hidden;
+  padding: 40rpx 20rpx;
+  .block {
+    margin-bottom: 80rpx;
+  }
+  .title {
+    margin-bottom: 20rpx;
+  }
+  .text {
+    margin-bottom: 20rpx;
+    text-indent: 10rpx;
+  }
+  .notoicText {
+    margin-bottom: 10rpx;
+    text-indent: 10rpx;
+  }
+  .wx {
+    background: url(../../static/wx.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 800rpx;
+  }
 }
 .tabBar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    // height: 120rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border-top: 2rpx solid #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  padding-bottom: calc(
+    20rpx + constant(safe-area-inset-bottom)
+  ); /*兼容 IOS<11.2*/
+  padding-bottom: calc(20rpx + env(safe-area-inset-bottom)); /*兼容 IOS>11.2*/
+  .btn {
+    background: #6190e8;
+    color: #fff;
+    width: 40%;
+    height: 100rpx;
+    border: none;
+    padding: 10rpx;
     box-sizing: border-box;
-    padding:  40rpx;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: white;
-    border-top: 2rpx solid  #F7F7F7;
-    .btn {
-       background: #6190E8;
-       color: #fff;
-       width: 40%;
-       box-sizing: border-box;
-       border: none;
-       padding: 28rpx;
-    }
-     .btn::after {
-      border: none;
-    }
+    justify-content: center;
   }
-  
+  .btn::after {
+    border: none;
+  }
+}

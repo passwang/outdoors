@@ -1,3 +1,5 @@
+import path from 'path'
+
 const config = {
   projectName: 'outdoors',
   date: '2023-3-9',
@@ -23,6 +25,10 @@ const config = {
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
+   alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/services': path.resolve(__dirname, '..', 'src/services'),
+   },
   mini: {
     postcss: {
       pxtransform: {
